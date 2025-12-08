@@ -1,9 +1,10 @@
 import json
 from playwright.sync_api import sync_playwright, BrowserContext, Page
+from config import HEADLESS
 
 # 載入cookies的函式
 def get_browser_context(p: sync_playwright, cookies_file: str) -> BrowserContext:
-    browser = p.chromium.launch(headless=False, args=["--start-maximized"])
+    browser = p.chromium.launch(headless=HEADLESS, args=["--start-maximized"])
     context = browser.new_context(no_viewport=True)
 
     try:

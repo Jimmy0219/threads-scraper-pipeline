@@ -5,7 +5,10 @@
 COOKIES_FILE = "cookies.js"
 DB_NAME = "Threads_crawler_database.db"
 
-# main.py 中會用到的設定參數
+# 瀏覽器設定
+HEADLESS = True                # 是否以無頭模式運行瀏覽器
+
+# main_phase1.py 中會用到的設定參數
 # 搜尋設定
 SEARCH_KEYWORD = "筆電推薦"
 TARGET_URL = "https://www.threads.com/search?q=%E7%AD%86%E9%9B%BB%E6%8E%A8%E8%96%A6&serp_type=default&hl=zh-tw"
