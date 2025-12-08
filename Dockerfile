@@ -1,6 +1,8 @@
 # 使用微軟官方提供的 Playwright Python 映像檔 (這已包含 Python 和 瀏覽器環境)
 FROM mcr.microsoft.com/playwright/python:v1.40.0-jammy
 
+ENV PYTHONUNBUFFERED=1
+
 # 設定工作目錄
 WORKDIR /app
 
